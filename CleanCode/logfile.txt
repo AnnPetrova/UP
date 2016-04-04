@@ -1,0 +1,20 @@
+Usage history:  Request: deleting on 2016-02-15 16:34:04.259
+ 	 Amount of deleted messages  - 1
+ Request: deleting on 2016-02-15 16:34:08.162
+ 	 Amount of deleted messages  - 0
+ Request: searching by author on 2016-02-15 16:34:13.942
+ 	 Amount of deleted messages  - 1
+ Request: searching by author on 2016-02-15 16:34:17.664
+ 	 Amount of deleted messages  - 0
+ Request: searching by keyword on 2016-02-15 16:34:24.887
+ 	 Amount of found messages  - 1
+ Request: searching by keyword on 2016-02-15 16:34:30.475
+ 	 Amount of found messages  - 0
+ Request: searching by a regular expression on 2016-02-15 16:34:37.758
+ 	 Amount of found messages  - 0
+ Request: searching by a period of time on 2016-02-15 16:35:28.286
+ 	 Amount of found messages  - 2
+Usage history: Error: wrong input!	2016-02-23 11:29:23.387
+ Request: searching by a regular expression FAILED on 2016-02-23 11:31:38.804
+Usage history:  Request: searching by a regular expression FAILED on 2016-02-23 11:32:24.678
+Usage history:  Request: searching by a regular expression FAILED on 2016-02-23 12:33:59.015

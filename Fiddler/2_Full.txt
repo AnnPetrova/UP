@@ -1,0 +1,12 @@
+GET http://192.168.1.4:999/chat?token=TN35EN HTTP/1.1
+Host: 192.168.1.4:999
+Content-Length: 42
+
+Host: 192.168.1.4:999
+User-agent:Composer
+HTTP/1.1 200 OK
+Date: Sun, 03 Apr 2016 16:58:48 GMT
+Access-control-allow-origin: *
+Content-length: 32
+
+{"messages":[],"token":"TN35EN"}
