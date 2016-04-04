@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Date: Mon, 04 Apr 2016 22:26:57 GMT
+Access-control-allow-origin: *
+Content-length: 79
+
+{"messages":["message one","one more message","messag three"],"token":"TN35EN"}
