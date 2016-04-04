@@ -1,0 +1,41 @@
+commit 4ccf5be5e2d7b4877e89857472f94da6dfa708a1
+Merge: 79af950 5749c78
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Fri Feb 12 19:36:13 2016 +0300
+
+    Add CleanCode
+
+commit 79af950dd936e6cd2fa198bd88c0873426b9d31b
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Fri Feb 12 19:29:43 2016 +0300
+
+    Add CleanCode
+commit 79c605f56ff66744417ae2b38d437ccb87d7bb7a
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Thu Feb 11 22:33:07 2016 +0300
+
+    Add CleanCode
+
+commit 5b313d9a3bf98952d60fb2131bf9c467d38ce089
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Tue Feb 9 16:07:31 2016 +0300
+
+    Add status.txt
+
+commit a063cb1c776fc867a9cd298758ebe58195001922
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Tue Feb 9 15:17:06 2016 +0300
+
+    Add log.txt
+
+commit 98bbb87fdc567408d66460c4b6f2f01414376edf
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Tue Feb 9 15:13:50 2016 +0300
+
+    Add status.txt
+
+commit 6bf5985aea40183f3addf80ed9c8c14aa7160b9a
+Author: AnnPetrova <brigantinas_fan@mail.ru>
+Date:   Tue Feb 9 15:10:39 2016 +0300
+
+    Add .gitignore
