@@ -2,10 +2,10 @@ var mesId = 0;
 var myName = "User 1";
 //var mesList = [];
 var Application = {
-    mesList : [],
-    mainUrl : 'http://localhost:8080/chat',
-    token : 'TN11EN',
-    connection : null
+    mesList: [],
+    mainUrl: 'http://localhost:8080/chat',
+    token: 'TN11EN',
+    connection: null
 };
 function run() {
     var appContainer = document.getElementsByClassName('main')[0];
@@ -13,7 +13,7 @@ function run() {
     appContainer.addEventListener('click', delegateEvent);
     appContainer.addEventListener('keydown', delegateEvent);
 
-    Application.mesList = loadMessage()|| [newMessage('Chat:')];
+    loadMessage();
     mesId = Application.mesList[Application.mesList.length - 1].id;
 
     myName = Application.mesList[Application.mesList.length - 1].username || 'User 1';
@@ -33,12 +33,12 @@ function delegateEvent(evtObj) {
 function onSendButtonClick() {
     var userMsg = document.getElementById('userMsg');
     var text = userMsg.value;
-    if(text!="") {
+    if (text != "") {
         mesId++;
         var mes = newMessage(text);
-        ajax('POST',Application.mainUrl,JSON.stringify(mes), function(){
+        ajax('POST', Application.mainUrl, JSON.stringify(mes), function () {
 
-             Application.mesList.push(mes);
+            Application.mesList.push(mes);
             render(Application.mesList);
 
             userMsg.value = "";
@@ -119,14 +119,14 @@ function add(messag) {
     document.getElementById('messages').appendChild(divName);
     document.getElementById('messages').appendChild(divItem);
 
-    if(messag.username!==myName){
+    if (messag.username !== myName) {
         deleteBut.hidden = true;
         editBut.hidden = true;
     }
-    if(messag.edited ===true){
+    if (messag.edited === true) {
         var edit = document.createElement('div');
         edit.className.add('edit');
-        edit.setAttribute('id','edit');
+        edit.setAttribute('id', 'edit');
         edit.innerHTML = 'Edited';
         divName.appendChild(edit);
     }
@@ -147,8 +147,8 @@ function deleteMessage(messag) {
     var mes = {
         id: messag.id
     };
-    ajax('DELETE', Application.mainUrl, JSON.stringify(mes), function() {
-        message.deleted = true;
+    ajax('DELETE', Application.mainUrl, JSON.stringify(mes), function () {
+        messag.deleted = true;
         messag.text = 'Message deleted.';
         render(Application.mesList);
     });
@@ -171,7 +171,7 @@ function changeMessage(messag) {
                 id: messag.id,
                 text: messag.text
             };
-            ajax('PUT', Application.mainUrl, JSON.stringify(mes), function(){
+            ajax('PUT', Application.mainUrl, JSON.stringify(mes), function () {
                 loadMessage()
             });
             messag.edited = true;
@@ -186,10 +186,10 @@ function changeMessage(messag) {
 }
 function newMessage(text) {
     return {
-        username: myName,
-        text: text,
         id: mesId,
+        username: myName,
         timestamp: new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"),
+        text: text,
         deleted: false,
         edited: false
     };
@@ -198,19 +198,19 @@ function newMessage(text) {
 function ajax(method, url, data, continueWith) {
     var xhr = new XMLHttpRequest();
 
-  //  continueWithError = continueWithError || defaultErrorHandler;
+    //  continueWithError = continueWithError || defaultErrorHandler;
     xhr.open(method || 'GET', url, true);
 
     xhr.onload = function () {
         if (xhr.readyState !== 4)
             return;
 
-        if(xhr.status != 200) {
+        if (xhr.status != 200) {
             defaultErrorHandler('Error on the server side, response ' + xhr.status);
             return;
         }
 
-        if(isError(xhr.responseText)) {
+        if (isError(xhr.responseText)) {
             defaultErrorHandler('Error on the server side, response ' + xhr.responseText);
             return;
         }
@@ -230,22 +230,22 @@ function ajax(method, url, data, continueWith) {
 
     xhr.send(data);
 }
-function showError(){
+function showError() {
     var err = document.getElementsByClassName('error')[0];
     err.innerHTML = '<img class="error" src="http://mediad.publicbroadcasting.net/p/wusf/files/styles/related/public/201206/error2.png" align="right" width="5%" height="5%" alt="Error">';
 }
 function defaultErrorHandler(message) {
     console.error(message);
-   // output(text);
+    // output(text);
 }
 
 function isError(text) {
-    if(text == "")
+    if (text == "")
         return false;
 
     try {
         var obj = JSON.parse(text);
-    } catch(ex) {
+    } catch (ex) {
         return true;
     }
 
@@ -254,7 +254,7 @@ function isError(text) {
 function loadMessage() {
     var url = Application.mainUrl + '?token=' + Application.token;
 
-    ajax('GET', url, null, function(responseText){
+    ajax('GET', url, null, function (responseText) {
         var response = JSON.parse(responseText);
         Application.mesList = response.messages;
         render(Application.mesList);
