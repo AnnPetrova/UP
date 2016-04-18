@@ -50,7 +50,7 @@ public class InMemoryMessageStorage implements MessageStorage {
         for (int i = 0; i < messages.size(); i++) {
             if (messages.get(i).getId().equals(message.getId())) {
                 messages.get(i).setText(message.getText());
-                messages.get(i).setEdited(" edited");
+                messages.get(i).setEdited("edited");
                 try {
                     saveMessages(messages);
                 } catch (IOException e) {
@@ -128,9 +128,10 @@ public class InMemoryMessageStorage implements MessageStorage {
 
     public static JsonObject toJson(Message history) {
         return Json.createObjectBuilder().add("id", history.getId())
-                .add("author", history.getAuthor())
+                .add("author", history.getUsername())
                 .add("timestamp", history.getTimestamp())
                 .add("message", history.getText())
-                .add("edited", history.getEdited()).build();
+                .add("edited", history.getEdited())
+                .add("deleted", history.getDeleted()).build();
     }
 }

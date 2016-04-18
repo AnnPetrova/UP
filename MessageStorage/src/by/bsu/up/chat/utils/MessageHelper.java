@@ -120,7 +120,7 @@ public class MessageHelper {
         if (isPost){
             long timestamp = ((long) jsonObject.get(Constants.Message.FIELD_TIMESTAMP));
             String author = ((String) jsonObject.get(Constants.Message.FIELD_AUTHOR));
-            message.setAuthor(author);
+            message.setUsername(author);
             message.setTimestamp(timestamp);
         }
         return message;
@@ -148,7 +148,7 @@ public class MessageHelper {
     private static JSONObject messageToJSONObject(Message message) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(Constants.Message.FIELD_ID, message.getId());
-        jsonObject.put(Constants.Message.FIELD_AUTHOR, message.getAuthor());
+        jsonObject.put(Constants.Message.FIELD_AUTHOR, message.getUsername());
         jsonObject.put(Constants.Message.FIELD_TIMESTAMP, message.getTimestamp());
         jsonObject.put(Constants.Message.FIELD_TEXT, message.getText());
         jsonObject.put(Constants.Message.FIELD_IS_EDIT,message.getEdited());

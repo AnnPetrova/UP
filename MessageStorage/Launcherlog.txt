@@ -1,0 +1,5 @@
+2016-04-18 14:16:57.357: [by.bsu.up.chat.Launcher] Port is not specified. Starting Server on default port 8080
+2016-04-18 14:16:57.384: [by.bsu.up.chat.Launcher] Starting server on localhost...
+2016-04-18 14:16:58.418: [by.bsu.up.chat.Launcher] Server started.
+2016-04-18 14:16:58.594: [by.bsu.up.chat.Launcher] Get list of messages: GET http://192.168.1.4:8080/chat?token={token}
+2016-04-18 14:16:58.595: [by.bsu.up.chat.Launcher] Send message: POST http://192.168.1.4:8080/chat provide body json in format {"id" : "1", "author":"User1", "text":"Hello, all!", "timestamp":1459169330000}

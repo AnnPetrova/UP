@@ -6,24 +6,27 @@ import java.io.Serializable;
 public class Message implements Serializable {
 
     private String id;
-    private String author;
+    private String username;
     private long timestamp;
     private String text;
     private String edited;
+    private String deleted;
 
     public Message() {
         this.id = "";
-        this.author = "";
+        this.username = "";
         this.timestamp = 0;
         this.text = "";
         this.edited = "";
+        this.deleted = "";
     }
 
     public Message(JsonObject temp) {
-        this.author = temp.getString("author");
+        this.username = temp.getString("username");
         this.timestamp = temp.getJsonNumber("timestamp").longValue();
         this.text = temp.getString("message");
         this.edited = temp.getString("edited");
+        this.deleted = temp.getString("deleted");
         this.id = temp.getString("id");
     }
 
@@ -43,12 +46,12 @@ public class Message implements Serializable {
         this.id = id;
     }
 
-    public String getAuthor() {
-        return author;
+    public String getUsername() {
+        return username;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public long getTimestamp() {
@@ -67,15 +70,23 @@ public class Message implements Serializable {
         this.text = text;
     }
 
+    public String getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(String deleted) {
+        this.deleted = deleted;
+    }
 
     @Override
     public String toString() {
         return "Message{" +
-                "author='" + author + '\'' +
-                ", id='" + id + '\'' +
-                ", timestamp=" + timestamp +
-                ", text='" + text + '\'' +
-                ", edited='" + edited + '\'' +
+                "username:'" + username + '\'' +
+                ", text:'" + text + '\'' +
+                ", id:'" + id + '\'' +
+                ", timestamp:" + timestamp +
+                ", edited:'" + edited + '\'' +
+                ", deleted:'" + edited + '\'' +
                 '}';
     }
 }
