@@ -1,34 +1,332 @@
-2016-04-18 15:07:32.436: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:07:36.629: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:08:00.058: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:15:33.388: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:19:55.795: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:20:49.219: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:20:49.645: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:20:49.994: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:28:55.513: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
-2016-04-18 15:29:52.521: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
-2016-04-18 15:30:19.778: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:26.996: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:27.65: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:27.8: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:28.001: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:28.176: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:28.377: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:28.942: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:29.055: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:37:29.268: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:41.306: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:41.568: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:41.752: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:41.987: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:42.263: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:42.403: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:44.185: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:44.361: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:48.694: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 15:38:49.237: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 16:10:34.793: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 16:10:35.425: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
-2016-04-18 16:15:18.196: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
-2016-04-18 16:15:30.795: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+﻿2016-03-29 16:25:57.255: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ўЇ ўл 
+2016-03-29 16:26:00.816: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sdfdsf
+2016-03-29 16:26:02.269: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sdfsdf
+2016-03-29 16:26:07.243: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sdfsdfrftghjhk
+2016-03-29 16:26:28.094: [by.bsu.up.chat.server.ServerHandler] Received new message from user: test test EGOR
+2016-03-29 17:12:34.752: [by.bsu.up.chat.server.ServerHandler] Received new message from user: hello Grach
+2016-03-29 17:12:52.119: [by.bsu.up.chat.server.ServerHandler] Received new message from user: how are u?
+2016-03-29 17:12:56.467: [by.bsu.up.chat.server.ServerHandler] Received new message from user: mmmm????
+2016-03-29 17:13:34.839: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hello Egorka!
+2016-03-29 17:13:47.707: [by.bsu.up.chat.server.ServerHandler] Received new message from user: MiMiMi
+2016-03-29 17:13:54.9: [by.bsu.up.chat.server.ServerHandler] Received new message from user: go dota!
+2016-03-29 17:30:15.631: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hello bro
+2016-03-29 17:30:20.414: [by.bsu.up.chat.server.ServerHandler] Received new message from user: go play dota2
+2016-03-29 17:30:22.981: [by.bsu.up.chat.server.ServerHandler] Received new message from user: mm?
+2016-03-29 17:48:28.866: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hellooooo bro
+2016-03-29 17:48:41.101: [by.bsu.up.chat.server.ServerHandler] Received new message from user: let's go 
+2016-03-29 17:48:44.62: [by.bsu.up.chat.server.ServerHandler] Received new message from user: kekeke
+2016-03-29 17:49:34.847: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hello grach
+2016-03-29 17:49:40.811: [by.bsu.up.chat.server.ServerHandler] Received new message from user: h a u?
+2016-03-29 17:49:47.824: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ama normas
+2016-03-29 17:52:43.278: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hello Grach
+2016-03-29 17:52:57.185: [by.bsu.up.chat.server.ServerHandler] Received new message from user: May be u have some Mary?
+2016-03-29 17:54:36.87: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ewfwefewfewfewf
+2016-03-29 17:54:38.355: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ewf
+2016-03-29 18:06:32.995: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Hello Composer
+2016-03-29 18:06:35.451: [by.bsu.up.chat.server.ServerHandler] Received new message from user: go test u
+2016-03-29 18:06:49.686: [by.bsu.up.chat.server.ServerHandler] Received new message from user: go
+2016-03-29 18:14:28.506: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:25:32.837: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:25:40.97: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:27:34.097: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:27:58.26: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:30:33.293: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:31:23.808: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:32:11.937: [by.bsu.up.chat.server.ServerHandler] Received new message from user: task 3 
+2016-03-29 18:32:17.04: [by.bsu.up.chat.server.ServerHandler] Received new message from user: let's go
+2016-03-29 18:32:54.652: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:33:05.458: [by.bsu.up.chat.server.ServerHandler] Received new message from user: hello
+2016-03-29 18:33:20.093: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:34:35.129: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:37:16.535: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:38:13.959: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:38:25.234: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:40:00.643: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:40:06.378: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 18:41:50.49: [by.bsu.up.chat.server.ServerHandler] Received new message from user: azaza
+2016-03-29 18:41:53.815: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ahahaha
+2016-03-29 18:41:57.184: [by.bsu.up.chat.server.ServerHandler] Received new message from user: vuhahaha
+2016-03-29 18:53:32.951: [by.bsu.up.chat.server.ServerHandler] Received new message from user: esf
+2016-03-29 18:53:33.459: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sdf
+2016-03-29 18:53:35.322: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sf
+2016-03-29 18:53:36.682: [by.bsu.up.chat.server.ServerHandler] Received new message from user: sdfwegtewg
+2016-03-29 18:53:38.535: [by.bsu.up.chat.server.ServerHandler] Received new message from user: lasyt
+2016-03-29 18:55:40.923: [by.bsu.up.chat.server.ServerHandler] Received new message from user: first
+2016-03-29 18:55:45.439: [by.bsu.up.chat.server.ServerHandler] Received new message from user: second
+2016-03-29 18:55:49.308: [by.bsu.up.chat.server.ServerHandler] Received new message from user: third
+2016-03-29 18:55:53.599: [by.bsu.up.chat.server.ServerHandler] Received new message from user: blablabla
+2016-03-29 19:05:14.041: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 19:05:15.256: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-03-29 19:05:30.738: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message from server!
+2016-03-29 19:07:11.618: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Composer message
+2016-03-29 19:07:34.614: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Composer message
+2016-03-29 19:19:09.003: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Composer message
+2016-03-29 19:39:49.374: [by.bsu.up.chat.server.ServerHandler] Received new message from user: 1
+2016-03-29 19:39:49.932: [by.bsu.up.chat.server.ServerHandler] Received new message from user: 2
+2016-03-29 19:39:51.116: [by.bsu.up.chat.server.ServerHandler] Received new message from user: 3
+2016-03-29 19:39:52.291: [by.bsu.up.chat.server.ServerHandler] Received new message from user: efef
+2016-03-29 19:41:07.738: [by.bsu.up.chat.server.ServerHandler] Received new message from user: 2
+2016-03-29 19:41:08.338: [by.bsu.up.chat.server.ServerHandler] Received new message from user: gf
+2016-03-29 19:41:10.207: [by.bsu.up.chat.server.ServerHandler] Received new message from user: ytdf
+2016-04-14 16:40:43.26: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-14 16:41:30.702: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-14 16:41:48.482: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-14 16:43:29.632: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-14 16:47:00.084: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-14 16:55:07.245: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{id='1243', author='User1', timestamp=14591693300002, text='Hello, alerfrfrfl!', isEdit=' '}
+2016-04-14 16:56:55.532: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{id='124433', author='User545', timestamp=14591693300002, text='Hello,dfgdfggffg!', isEdit=' '}
+2016-04-15 19:51:21.134: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hello, all!', timestamp=1459169330000, author='User1', id='1'}
+2016-04-15 20:06:43.776: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hello, all!', timestamp=1459169330000, author='User1', id='1'}
+2016-04-15 20:06:51.264: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hello, wefwefwefweall!', timestamp=1459169330000, author='User1', id='2'}
+2016-04-15 20:38:33.563: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-15 20:43:18.092: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sf', timestamp=1460742198088, author='Anonymous', id='4827865629'}
+2016-04-15 20:43:33.683: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdvdfvdv', timestamp=1460742213680, author='Anonymous', id='72605440223'}
+2016-04-15 20:43:58.484: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='efewfwfe', timestamp=1460742238481, author='ef', id='260127168616'}
+2016-04-15 20:46:54.525: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sf', timestamp=1460742414522, author='ef', id='78110027274'}
+2016-04-15 20:46:57.438: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ssdfsdfs', timestamp=1460742417435, author='ef', id='698231631574'}
+2016-04-15 20:50:51.068: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460742651066, author='Anonymous', id='207853390547'}
+2016-04-15 20:50:54.928: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdgsdgdagdas', timestamp=1460742654924, author='Anonymous', id='90933153005'}
+2016-04-15 20:53:00.853: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hi', timestamp=1460742780848, author='Anonymous', id='59907164278'}
+2016-04-15 20:53:05.09: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='How are u', timestamp=1460742785085, author='Anonymous', id='12816729720'}
+2016-04-15 20:53:16.135: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Ama ok', timestamp=1460742796132, author='Egor', id='271923219149'}
+2016-04-15 20:53:19.342: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='and u?', timestamp=1460742799338, author='Egor', id='67206952255'}
+2016-04-15 20:53:30.162: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='HiHiHi ama sadsad', timestamp=1460742810158, author='Vlados', id='38545238009'}
+2016-04-15 21:04:06.276: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460743446271, author='Anonymous', id='411666001777'}
+2016-04-15 21:04:07.088: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460743447085, author='Anonymous', id='157034952190'}
+2016-04-15 21:04:08.04: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460743448037, author='Anonymous', id='971096122793'}
+2016-04-15 21:04:08.83: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460743448826, author='Anonymous', id='50640499108'}
+2016-04-15 21:04:10.195: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwefwf', timestamp=1460743450192, author='Anonymous', id='59590601090'}
+2016-04-15 21:04:11.391: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwefwef', timestamp=1460743451388, author='Anonymous', id='658139093451'}
+2016-04-15 21:04:12.527: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwefewf', timestamp=1460743452524, author='Anonymous', id='59402834753'}
+2016-04-15 21:05:10.735: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ewf', timestamp=1460743510732, author='Anonymous', id='14797198295'}
+2016-04-15 21:05:11.694: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ewfwef', timestamp=1460743511692, author='Anonymous', id='513658666117'}
+2016-04-15 21:05:12.538: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefewf', timestamp=1460743512535, author='Anonymous', id='87949580169'}
+2016-04-15 21:05:14.086: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwefewfewfewf', timestamp=1460743514083, author='Anonymous', id='147741175183'}
+2016-04-15 21:05:16.28: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='erferferferferferferf', timestamp=1460743516277, author='Anonymous', id='611752963090'}
+2016-04-15 21:05:17.533: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ffff', timestamp=1460743517531, author='Anonymous', id='103529337807'}
+2016-04-15 21:05:21.913: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='qwqq', timestamp=1460743521910, author='Anonymous', id='143089791112'}
+2016-04-15 21:05:23.996: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='qweqwe', timestamp=1460743523993, author='Anonymous', id='1040141055622'}
+2016-04-15 21:05:26.716: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='qq', timestamp=1460743526713, author='Anonymous', id='106682356337'}
+2016-04-15 21:06:07.789: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460743567785, author='Anonymous', id='371312059833'}
+2016-04-15 21:06:08.533: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfds', timestamp=1460743568530, author='Anonymous', id='105215040424'}
+2016-04-15 21:06:50.735: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fwef', timestamp=1460743610732, author='Anonymous', id='1046281623053'}
+2016-04-15 21:06:52.407: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460743612404, author='Anonymous', id='168214507943'}
+2016-04-15 21:06:55.293: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwef', timestamp=1460743615291, author='Anonymous', id='170072627798'}
+2016-04-15 21:06:59.191: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwf', timestamp=1460743619189, author='Anonymous', id='449161186446'}
+2016-04-15 21:07:32.259: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='efewf', timestamp=1460743652256, author='Anonymous', id='87868690423'}
+2016-04-15 21:07:33.218: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefew', timestamp=1460743653215, author='Anonymous', id='63950212619'}
+2016-04-15 21:08:48.731: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ef', timestamp=1460743728728, author='Anonymous', id='110160589455'}
+2016-04-15 21:09:59.876: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hi', timestamp=1460743799872, author='Egor', id='631203283421'}
+2016-04-15 21:10:08.522: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Ky', timestamp=1460743808516, author='Vlad', id='223999859477'}
+2016-04-15 21:10:17.829: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='$e po e4m', timestamp=1460743817826, author='Egor', id='236145486864'}
+2016-04-15 21:10:24.988: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Da normas', timestamp=1460743824984, author='Vlad', id='163918478332'}
+2016-04-15 21:13:30.725: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744010721, author='Egor', id='38080230862'}
+2016-04-15 21:13:31.274: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744011270, author='Egor', id='158979380884'}
+2016-04-15 21:13:31.65: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744011647, author='Egor', id='34970036778'}
+2016-04-15 21:13:31.979: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744011977, author='Egor', id='2211465273'}
+2016-04-15 21:13:32.297: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744012294, author='Egor', id='516202118112'}
+2016-04-15 21:13:32.577: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744012574, author='Egor', id='180301615181'}
+2016-04-15 21:13:32.832: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744012827, author='Egor', id='420552323677'}
+2016-04-15 21:13:33.009: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744013005, author='Egor', id='62722045750'}
+2016-04-15 21:13:33.194: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='gg', timestamp=1460744013190, author='Egor', id='245307983235'}
+2016-04-15 21:13:33.338: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744013335, author='Egor', id='72219462410'}
+2016-04-15 21:13:33.479: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744013477, author='Egor', id='59928104476'}
+2016-04-15 21:13:33.748: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='gg', timestamp=1460744013746, author='Egor', id='129611580433'}
+2016-04-15 21:13:33.897: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744013893, author='Egor', id='1013575214343'}
+2016-04-15 21:13:40.976: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460744020973, author='Egor', id='753915164111'}
+2016-04-15 21:14:06.964: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460744046961, author='Egor', id='60314359358'}
+2016-04-15 21:14:07.518: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460744047514, author='Egor', id='296468567018'}
+2016-04-15 21:14:07.903: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fef', timestamp=1460744047900, author='Egor', id='58479133655'}
+2016-04-15 21:14:08.085: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ef', timestamp=1460744048081, author='Egor', id='267769552761'}
+2016-04-15 21:14:08.228: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='e', timestamp=1460744048225, author='Egor', id='901056676460'}
+2016-04-15 21:14:08.366: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='rf', timestamp=1460744048363, author='Egor', id='191198961612'}
+2016-04-15 21:14:08.506: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='er', timestamp=1460744048502, author='Egor', id='508316815179'}
+2016-04-15 21:14:08.658: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fe', timestamp=1460744048656, author='Egor', id='843044730486'}
+2016-04-15 21:14:08.792: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='rf', timestamp=1460744048789, author='Egor', id='237906401844'}
+2016-04-15 21:14:08.93: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='er', timestamp=1460744048927, author='Egor', id='28940056754'}
+2016-04-15 21:14:09.2: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ferf', timestamp=1460744049196, author='Egor', id='584620562856'}
+2016-04-15 21:14:09.337: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='er', timestamp=1460744049334, author='Egor', id='7303360548'}
+2016-04-15 21:14:09.455: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460744049451, author='Egor', id='20296668799'}
+2016-04-15 21:14:09.587: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='er', timestamp=1460744049585, author='Egor', id='172080178021'}
+2016-04-15 21:14:09.709: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460744049707, author='Egor', id='407635465199'}
+2016-04-15 21:28:43.836: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ef', timestamp=1460744923831, author='Egor', id='16315097423'}
+2016-04-15 21:28:44.688: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='efef', timestamp=1460744924685, author='Egor', id='135626510574'}
+2016-04-15 21:28:45.503: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fefe', timestamp=1460744925500, author='Egor', id='490774101077'}
+2016-04-15 21:28:49.692: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ZAAZAZAZA', timestamp=1460744929689, author='Egor', id='343430625826'}
+2016-04-15 21:32:08.393: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hi', timestamp=1460745128390, author='Egor333', id='141711715306'}
+2016-04-15 21:34:03.291: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefewf', timestamp=1460745243285, author='Egor333', id='201939503906'}
+2016-04-15 21:34:03.935: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wefwe', timestamp=1460745243932, author='Egor333', id='50011812800'}
+2016-04-15 21:37:16.726: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fdg', timestamp=1460745436723, author='Egor333', id='20410129682'}
+2016-04-15 21:42:20.302: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='РєСѓРєСѓРє', timestamp=1460745740300, author='Vlad', id='509157565581'}
+2016-04-15 21:42:25.661: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfdfdf', timestamp=1460745745659, author='Vlad', id='186137076251'}
+2016-04-15 21:42:55.477: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='SDF', timestamp=1460745775475, author='Vlad', id='1125880784948'}
+2016-04-15 21:42:56.349: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='SDF', timestamp=1460745776346, author='Vlad', id='762107520971'}
+2016-04-15 21:42:57.361: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460745777360, author='Vlad', id='195379442981'}
+2016-04-15 21:43:06.714: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fsdfs', timestamp=1460745786711, author='Egor333', id='82250502410'}
+2016-04-15 21:49:00.638: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fdv', timestamp=1460746140633, author='Vlad', id='858221432935'}
+2016-04-15 21:49:02.39: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfvfdv', timestamp=1460746142380, author='Vlad', id='245460826722'}
+2016-04-15 21:49:59.553: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460746199549, author='Vlad', id='82119690859'}
+2016-04-15 21:50:03.439: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Afafsfsfs', timestamp=1460746203436, author='Vlad', id='149976694751'}
+2016-04-15 21:50:12.074: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='efe', timestamp=1460746212071, author='Vlad', id='582861212290'}
+2016-04-15 21:50:12.37: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='e', timestamp=1460746212367, author='Vlad', id='17349095005'}
+2016-04-15 21:50:12.522: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='e', timestamp=1460746212519, author='Vlad', id='27953327809'}
+2016-04-15 21:50:12.774: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ee', timestamp=1460746212770, author='Vlad', id='206248302523'}
+2016-04-15 21:50:12.893: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ee', timestamp=1460746212891, author='Vlad', id='44684077214'}
+2016-04-15 21:50:16.812: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='esdfsd', timestamp=1460746216809, author='Egor', id='292273022798'}
+2016-04-15 21:50:16.972: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sd', timestamp=1460746216969, author='Egor', id='1171496346'}
+2016-04-15 21:50:17.126: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ds', timestamp=1460746217123, author='Egor', id='648749116724'}
+2016-04-15 21:50:17.285: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ds', timestamp=1460746217283, author='Egor', id='660900852213'}
+2016-04-15 21:50:17.472: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dsds', timestamp=1460746217469, author='Egor', id='172163342954'}
+2016-04-15 22:01:21.891: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hi', timestamp=1460746881887, author='Vlad', id='372988356042'}
+2016-04-15 22:01:29.674: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Hiiiiiiii', timestamp=1460746889670, author='Vlad', id='1322639700195'}
+2016-04-15 22:01:32.443: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='brooooo', timestamp=1460746892440, author='Vlad', id='869125934963'}
+2016-04-15 22:01:41.69: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='РЅСѓ РїСЂРёРІ', timestamp=1460746901682, author='Egor', id='42489308590'}
+2016-04-15 22:02:08.62: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Р“РћР’РќРћ', timestamp=1460746928601, author='Egor', id='801567883341'}
+2016-04-15 22:03:20.686: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='hi', timestamp=1460747000610, author='Egor', id='1306038087332'}
+2016-04-15 22:08:55.733: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='F', timestamp=1460747335672, author='Egor', id='295799806457'}
+2016-04-15 22:09:50.079: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460747390033, author='Egor', id='845106705489'}
+2016-04-15 22:10:02.418: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='gergergerg', timestamp=1460747402415, author='Egor', id='536352313023'}
+2016-04-15 22:12:22.52: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460747542516, author='Egor', id='775645557378'}
+2016-04-15 22:12:24.462: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdfsd', timestamp=1460747544460, author='Egor', id='163182563264'}
+2016-04-15 22:12:26.16: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ffffff', timestamp=1460747546156, author='Egor', id='816866032090'}
+2016-04-15 22:12:27.265: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ffdf', timestamp=1460747547262, author='Egor', id='974406682506'}
+2016-04-15 22:12:40.285: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='DF', timestamp=1460747560282, author='vA', id='368490125588'}
+2016-04-15 22:12:47.231: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='FF', timestamp=1460747567228, author='e', id='6329702721'}
+2016-04-15 22:13:19.488: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='SDFSDF', timestamp=1460747599484, author='e', id='92002564665'}
+2016-04-15 22:14:34.991: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fvf', timestamp=1460747674956, author='e', id='63868796036'}
+2016-04-15 22:14:39.512: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='vv', timestamp=1460747679508, author='e', id='1294908270136'}
+2016-04-15 22:19:32.305: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdfsd', timestamp=1460747972301, author='e', id='1102372995121'}
+2016-04-15 22:19:33.02: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdfs', timestamp=1460747973017, author='e', id='72181371640'}
+2016-04-15 22:20:08.284: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dgfd', timestamp=1460748008241, author='e', id='4668977980'}
+2016-04-15 22:20:09.474: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfgdfgdfg', timestamp=1460748009469, author='e', id='958798981613'}
+2016-04-15 22:20:10.495: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfhfghgtrvfecdx', timestamp=1460748010492, author='e', id='33377416159'}
+2016-04-15 22:22:12.593: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fdg', timestamp=1460748132589, author='e', id='328075146718'}
+2016-04-15 22:22:13.006: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfg', timestamp=1460748133003, author='e', id='106043536274'}
+2016-04-15 22:22:13.275: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfg', timestamp=1460748133272, author='e', id='272231153316'}
+2016-04-15 22:22:13.525: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfg', timestamp=1460748133522, author='e', id='108873232957'}
+2016-04-15 22:22:17.713: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460748137710, author='e', id='228957834064'}
+2016-04-15 22:22:20.547: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460748140541, author='e', id='1071239742883'}
+2016-04-15 22:22:38.905: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsd', timestamp=1460748158869, author='e', id='568007828441'}
+2016-04-15 22:26:18.625: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='esf', timestamp=1460748378621, author='e', id='483436463774'}
+2016-04-15 22:26:32.844: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fdg', timestamp=1460748392838, author='e', id='294717678587'}
+2016-04-15 22:26:38.918: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='vv', timestamp=1460748398915, author='e', id='79290176817'}
+2016-04-15 22:27:37.117: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460748457113, author='e', id='380451845103'}
+2016-04-15 22:27:37.797: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460748457794, author='e', id='57315987846'}
+2016-04-15 22:28:04.211: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='HFDF', timestamp=1460748484209, author='e', id='61027454327'}
+2016-04-15 22:32:04.929: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdsdfsd', timestamp=1460748724927, author='Vlad', id='343029028997'}
+2016-04-15 22:38:12.304: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='hAI', timestamp=1460749092275, author='sdfsdfsd', id='616211614423'}
+2016-04-15 22:38:27.79: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Kak dela, bro?', timestamp=1460749107776, author='sdfsdfsd', id='19745718542'}
+2016-04-15 22:38:38.958: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Normik', timestamp=1460749118955, author='Egor', id='169711152506'}
+2016-04-15 22:38:45.335: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='9sno', timestamp=1460749125333, author='Egor', id='486647817375'}
+2016-04-15 22:39:10.65: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sfdgf', timestamp=1460749150648, author='sd', id='225464852224'}
+2016-04-15 22:40:20.572: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ff', timestamp=1460749220559, author='Egor', id='435218977909'}
+2016-04-15 22:40:21.054: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460749221047, author='Egor', id='677510964908'}
+2016-04-15 22:40:21.504: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460749221497, author='Egor', id='413555514705'}
+2016-04-15 22:40:21.824: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460749221811, author='Egor', id='1137544006494'}
+2016-04-15 22:40:29.743: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='d', timestamp=1460749229741, author='Vlad', id='585013663136'}
+2016-04-15 22:45:32.824: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='РјРё', timestamp=1460749532791, author='Egor', id='507213683170'}
+2016-04-15 22:47:13.312: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Р°РїСЂРѕ', timestamp=1460749633309, author='Egor', id='108719784663'}
+2016-04-15 22:48:27.569: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460749707567, author='Egor', id='640296258010'}
+2016-04-15 22:48:32.827: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ff pls', timestamp=1460749712822, author='Egor', id='174725165753'}
+2016-04-15 22:48:39.848: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ok', timestamp=1460749719837, author='Vlad', id='89281435880'}
+2016-04-15 22:48:46.068: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='bay bay', timestamp=1460749726057, author='Egor', id='542253113223'}
+2016-04-15 22:49:14.722: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='oker', timestamp=1460749754687, author='Egor', id='353843493901'}
+2016-04-15 23:12:47.477: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Р°Р°', timestamp=1460751167462, author='Egor', id='89756839596'}
+2016-04-15 23:12:48.36: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='С‹РІР°', timestamp=1460751168349, author='Egor', id='200075241949'}
+2016-04-15 23:12:49.041: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='С‹РІР°', timestamp=1460751168983, author='Egor', id='683213831738'}
+2016-04-15 23:13:58.784: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='qwe', timestamp=1460751238780, author='Egor', id='270003177060'}
+2016-04-15 23:14:01.58: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='rty', timestamp=1460751241575, author='Egor', id='67690968407'}
+2016-04-15 23:14:12.502: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='azaza', timestamp=1460751252499, author='Vlad', id='238218346487'}
+2016-04-15 23:14:18.891: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='yryry', timestamp=1460751258888, author='Vlad', id='186968079916'}
+2016-04-15 23:14:23.911: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='gg', timestamp=1460751263907, author='Vlad', id='16562465117'}
+2016-04-15 23:14:25.908: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460751265904, author='Vlad', id='88657052226'}
+2016-04-15 23:14:30.473: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='g', timestamp=1460751270470, author='Vlad', id='373834079648'}
+2016-04-15 23:15:06.954: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='v', timestamp=1460751306946, author='Vlad', id='617079046516'}
+2016-04-15 23:15:08.049: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='d', timestamp=1460751308032, author='Vlad', id='651649960299'}
+2016-04-15 23:15:08.908: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460751308902, author='Vlad', id='848373881334'}
+2016-04-15 23:15:09.792: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460751309784, author='Vlad', id='335191332369'}
+2016-04-15 23:15:10.24: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460751310227, author='Vlad', id='19456683057'}
+2016-04-15 23:16:19.905: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='v', timestamp=1460751379899, author='Egor', id='454379045139'}
+2016-04-15 23:16:21.359: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='vf', timestamp=1460751381356, author='Egor', id='306703835973'}
+2016-04-15 23:19:31.205: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdf', timestamp=1460751571200, author='Egor', id='166908206189'}
+2016-04-15 23:19:31.903: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfds', timestamp=1460751571891, author='Egor', id='245057176529'}
+2016-04-15 23:19:38.431: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460751578421, author='Egor', id='635670817375'}
+2016-04-15 23:19:38.985: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfdsf', timestamp=1460751578971, author='Egor', id='6898056930'}
+2016-04-15 23:22:51.584: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460751771581, author='fdg', id='18699154718'}
+2016-04-15 23:23:33.523: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='hm', timestamp=1460751813520, author='fdg', id='167241705792'}
+2016-04-15 23:24:53.638: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ffsdf', timestamp=1460751893635, author='fdg', id='198904352763'}
+2016-04-15 23:25:27.445: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ff', timestamp=1460751927442, author='fdg', id='274800931137'}
+2016-04-15 23:25:27.642: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460751927636, author='fdg', id='772118585652'}
+2016-04-15 23:25:27.78: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460751927772, author='fdg', id='157811968902'}
+2016-04-15 23:25:27.902: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460751927888, author='fdg', id='335594635922'}
+2016-04-15 23:30:20.173: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ef', timestamp=1460752220171, author='Vlad', id='1275729821062'}
+2016-04-15 23:30:43.294: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fd', timestamp=1460752243292, author='Vlad', id='115253297339'}
+2016-04-15 23:30:45.45: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fe', timestamp=1460752245448, author='Vlad', id='1080952813457'}
+2016-04-15 23:30:53.13: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fe', timestamp=1460752253127, author='Vlad', id='145876815518'}
+2016-04-15 23:34:10.052: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460752450049, author='fdg', id='148173855864'}
+2016-04-15 23:34:11.905: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460752451889, author='fdg', id='295971479358'}
+2016-04-15 23:34:15.41: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460752455406, author='fdg', id='721288007840'}
+2016-04-15 23:34:30.82: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='dfdf', timestamp=1460752470805, author='Vlad', id='314193157475'}
+2016-04-15 23:34:32.808: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdf', timestamp=1460752472803, author='Vlad', id='120454470249'}
+2016-04-15 23:34:35.996: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfsdfsdfsdfsdfsdfsdfsdfsdfsd', timestamp=1460752475986, author='Vlad', id='315035898459'}
+2016-04-15 23:34:44.62: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='1', timestamp=1460752484606, author='f', id='526552095688'}
+2016-04-15 23:34:45.487: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='2', timestamp=1460752485480, author='f', id='883801330916'}
+2016-04-15 23:34:46.917: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='3', timestamp=1460752486912, author='f', id='742863521592'}
+2016-04-15 23:34:48.103: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='4', timestamp=1460752488095, author='f', id='21219030961'}
+2016-04-15 23:35:09.578: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752509573, author='f', id='18245483067'}
+2016-04-15 23:35:12.243: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752512238, author='f', id='496784574412'}
+2016-04-15 23:35:12.694: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752512688, author='f', id='18272823902'}
+2016-04-15 23:35:12.985: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752512977, author='f', id='203333443148'}
+2016-04-15 23:35:13.219: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752513210, author='f', id='1198479518887'}
+2016-04-15 23:35:13.4: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752513396, author='f', id='1139530629739'}
+2016-04-15 23:35:13.559: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752513547, author='f', id='165766647216'}
+2016-04-15 23:35:13.719: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752513710, author='f', id='25116166597'}
+2016-04-15 23:35:25.218: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='f', timestamp=1460752525208, author='f', id='791892214180'}
+2016-04-15 23:35:26.116: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fe', timestamp=1460752526098, author='f', id='46488191524'}
+2016-04-15 23:35:27.043: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='wef', timestamp=1460752527025, author='f', id='257751907965'}
+2016-04-15 23:35:27.724: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='hg', timestamp=1460752527717, author='f', id='162216870350'}
+2016-04-15 23:35:33.933: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='1', timestamp=1460752533921, author='GAGAGAGA', id='30242569681'}
+2016-04-15 23:35:34.629: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='2', timestamp=1460752534623, author='GAGAGAGA', id='133502918761'}
+2016-04-15 23:35:35.111: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='3', timestamp=1460752535103, author='GAGAGAGA', id='612923888265'}
+2016-04-15 23:35:35.547: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='4', timestamp=1460752535536, author='GAGAGAGA', id='233626837114'}
+2016-04-15 23:35:45.946: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ef', timestamp=1460752545942, author='f', id='112868245155'}
+2016-04-15 23:35:51.058: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='fe', timestamp=1460752551045, author='f', id='345717359030'}
+2016-04-15 23:37:46.565: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='1', timestamp=1460752666534, author='f', id='350075714779'}
+2016-04-18 20:58:58.012: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-18 20:59:09.564: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='null', timestamp=1461001558303, author='User 1', id='959629111872'}
+2016-04-18 20:59:09.591: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 20:59:59.168: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ololo', timestamp=1461001558303, author='User 1', id='959629111872'}
+2016-04-18 20:59:59.184: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 21:00:17.948: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ololo', timestamp=1461001558303, author='User 1', id='959629111872'}
+2016-04-18 21:00:17.958: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 21:02:54.653: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ololo', timestamp=1461001558303, author='User 1', id='959629111872'}
+2016-04-18 21:03:40.78: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,,', timestamp=1461002620775, author='"Р¤С†Сѓ"', id='272818510843'}
+2016-04-18 21:03:45.641: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,,', timestamp=1461002625636, author='"Р¤С†Сѓ"', id='217905056143'}
+2016-04-18 21:03:56.649: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='lll', timestamp=1461002636646, author='user 4', id='931417056047'}
+2016-04-18 21:08:08.894: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='...', timestamp=1461002888888, author='User 1', id='569579194175'}
+2016-04-18 21:08:30.591: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='rtyuio', timestamp=1461002910586, author='User 1', id='16656404827'}
+2016-04-18 21:14:51.431: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='kkk', timestamp=1461003291426, author='"user 4"', id='231813459821'}
+2016-04-18 21:15:47.935: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='sdfghj', timestamp=1461003347930, author='anya', id='279555269078'}
+2016-04-18 21:15:53.753: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='l,l,l', timestamp=1461003353749, author='anya', id='87012903452'}
+2016-04-18 21:17:48.422: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='lll', timestamp=1461003468418, author='anya', id='111205571482'}
+2016-04-18 21:18:55.113: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,', timestamp=1461003535107, author='anya', id='1169665001'}
+2016-04-18 21:19:19.85: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,', timestamp=1461003559842, author='"anya"', id='15169548732'}
+2016-04-18 21:19:51.17: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,', timestamp=1461003591166, author='"anya"', id='734004601656'}
+2016-04-18 21:20:09.745: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='...', timestamp=1461003609735, author='"anya"', id='32860623998'}
+2016-04-18 21:20:14.852: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='.lllllllllll', timestamp=1461003614845, author='"anya"', id='56153891893'}
+2016-04-18 21:20:41.121: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='..', timestamp=1461003641114, author='"anya"', id='21645548503'}
+2016-04-18 21:20:45.124: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='ll', timestamp=1461003645115, author='"anya"', id='74173436201'}
+2016-04-18 21:22:37.186: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=', , , ', timestamp=1461003757180, author='"anya"', id='630241853891'}
+2016-04-18 21:22:51.391: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003771386, author='ann', id='132335767692'}
+2016-04-18 21:22:53.216: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003773208, author='ann', id='679910569970'}
+2016-04-18 21:22:53.907: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003773902, author='ann', id='694516819286'}
+2016-04-18 21:22:54.045: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003774039, author='ann', id='111535486343'}
+2016-04-18 21:22:54.246: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003774237, author='ann', id='574891042'}
+2016-04-18 21:22:54.482: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003774473, author='ann', id='1283487602713'}
+2016-04-18 21:23:18.025: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003798020, author='ann', id='138880970505'}
+2016-04-18 21:24:33.512: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='Avava', timestamp=1461003873508, author='"\"ann\""', id='2431838892'}
+2016-04-18 21:25:34.126: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='llmlm', timestamp=1461003934122, author='"User 1"', id='955026012772'}
+2016-04-18 21:25:46.395: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',,  , ', timestamp=1461003946390, author='"User 1"', id='539628688562'}
+2016-04-18 21:26:02.18: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text=',l,l,', timestamp=1461003962177, author='User 1', id='225161885762'}
+2016-04-18 21:26:29.309: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='lmlmlm', timestamp=1461003989298, author='User 1', id='723850263775'}
+2016-04-18 21:26:41.013: [by.bsu.up.chat.server.ServerHandler] Received new message from user: Message{text='..', timestamp=1461004001009, author='User 2', id='386203132752'}

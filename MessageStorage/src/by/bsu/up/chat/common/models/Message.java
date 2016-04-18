@@ -5,9 +5,8 @@ import java.io.Serializable;
 
 public class Message implements Serializable {
 
-
     private String id;
-    private String username;
+    private String author;
     private long timestamp;
     private String text;
     private Boolean edited;
@@ -15,7 +14,7 @@ public class Message implements Serializable {
 
     public Message() {
         this.id = "";
-        this.username = "";
+        this.author = "";
         this.timestamp = 0;
         this.text = "";
         this.edited = false;
@@ -23,7 +22,7 @@ public class Message implements Serializable {
     }
 
     public Message(JsonObject temp) {
-        this.username = temp.getString("username");
+        this.author = temp.getString("author");
         this.timestamp = temp.getJsonNumber("timestamp").longValue();
         this.text = temp.getString("message");
         this.edited = temp.getBoolean("edited");
@@ -31,13 +30,15 @@ public class Message implements Serializable {
         this.id = temp.getString("id");
     }
 
-    public Boolean getEdited() {
+    public Boolean getIsEdit() {
         return edited;
+
     }
 
-    public void setEdited(Boolean edited) {
-        this.edited = edited;
+    public void setIsEdit(Boolean edit) {
+        this.edited = edit;
     }
+
     public String getId() {
         return id;
     }
@@ -46,12 +47,12 @@ public class Message implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public long getTimestamp() {
@@ -78,5 +79,13 @@ public class Message implements Serializable {
         this.deleted = deleted;
     }
 
-
+    @Override
+    public String toString() {
+        return "Message{" +
+                "text='" + text + '\'' +
+                ", timestamp=" + timestamp +
+                ", author='" + author + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

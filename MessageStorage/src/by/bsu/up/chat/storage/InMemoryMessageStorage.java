@@ -3,6 +3,7 @@ package by.bsu.up.chat.storage;
 import by.bsu.up.chat.common.models.Message;
 import by.bsu.up.chat.logging.Logger;
 import by.bsu.up.chat.logging.impl.Log;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -36,25 +37,24 @@ public class InMemoryMessageStorage implements MessageStorage {
     }
 
     @Override
-    public void addMessage(Message message)  {
+    public void addMessage(Message message) {
         messages.add(message);
-        try{
-        saveMessages(messages);
-        }
-        catch (IOException e){
+        try {
+            saveMessages(messages);
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 
     @Override
     public boolean updateMessage(Message message) {
-        for (int i = 0; i<messages.size();i++){
-            if (messages.get(i).getId().equals(message.getId())){
+        for (int i = 0; i < messages.size(); i++) {
+            if (messages.get(i).getId().equals(message.getId())) {
                 messages.get(i).setText(message.getText());
-                messages.get(i).setEdited(true);
+                messages.get(i).setIsEdit(true);
                 try {
                     saveMessages(messages);
-                }catch (IOException e){
+                } catch (IOException e) {
                     System.out.println(e.getMessage());
                 }
                 return true;
@@ -65,13 +65,13 @@ public class InMemoryMessageStorage implements MessageStorage {
 
     @Override
     public synchronized boolean removeMessage(String messageId) {
-        for (int i = 0; i<messages.size(); i++){
-            if (messages.get(i).getId().equals(messageId)){
+        for (int i = 0; i < messages.size(); i++) {
+            if (messages.get(i).getId().equals(messageId)) {
                 messages.get(i).setDeleted(true);
-                messages.get(i).setText("");
+                messages.get(i).setText("Message deleted.");
                 try {
                     saveMessages(messages);
-                }catch (IOException e){
+                } catch (IOException e) {
                     System.out.println(e.getMessage());
                 }
                 return true;
@@ -86,10 +86,10 @@ public class InMemoryMessageStorage implements MessageStorage {
     }
 
     @Override
-    public  void loadMessages(){
+    public void loadMessages() {
         try {
             JsonArray forArray = getJson();
-            if (!forArray.isEmpty()){
+            if (!forArray.isEmpty()) {
                 JsonArray array = forArray.getJsonArray(0);
                 messages.clear();
                 for (int i = 0; i < array.size(); i++) {
@@ -98,14 +98,14 @@ public class InMemoryMessageStorage implements MessageStorage {
                     messages.add(tempMessage);
                 }
             }
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 
 
     public static JsonArray getJson() throws IOException {
-        List<String> list= Files.readAllLines(Paths.get("MessageHistory.json"));
+        List<String> list = Files.readAllLines(Paths.get("history.json"));
         String JSONData = list.toString();
         JsonReader forRead = Json.createReader(new StringReader(JSONData));
         JsonArray forArray = forRead.readArray();
@@ -116,25 +116,26 @@ public class InMemoryMessageStorage implements MessageStorage {
     @Override
     public void saveMessages(List<Message> messages) throws IOException {
         if (!messages.isEmpty()) {
-            FileWriter writer = new FileWriter("MessageHistory.json");
-            JsonWriter historyWriter = Json.createWriter(writer);
+            FileWriter out = new FileWriter("history.json");
+            JsonWriter writeHistory = Json.createWriter(out);
             JsonArrayBuilder jsonHistory = Json.createArrayBuilder();
             for (Message i : messages) {
                 jsonHistory.add(toJson(i));
             }
             JsonArray arr = jsonHistory.build();
-            historyWriter.writeArray(arr);
-            writer.close();
-            historyWriter.close();
+            writeHistory.writeArray(arr);
+            out.close();
+            writeHistory.close();
         }
     }
-    public static JsonObject toJson(Message aHistory) {
-        return Json.createObjectBuilder()
-                .add("id", aHistory.getId())
-                .add("username", aHistory.getUsername())
-                .add("timestamp", aHistory.getTimestamp())
-                .add("message", aHistory.getText())
-                .add("deleted",aHistory.getDeleted())
-                .add("edited",aHistory.getEdited()).build();
+
+
+    public static JsonObject toJson(Message history) {
+        return Json.createObjectBuilder().add("id", history.getId())
+                .add("author", history.getAuthor())
+                .add("timestamp", history.getTimestamp())
+                .add("message", history.getText())
+                .add("deleted", history.getDeleted())
+                .add("edited", history.getIsEdit()).build();
     }
 }

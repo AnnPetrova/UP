@@ -5,14 +5,18 @@ import by.bsu.up.chat.InvalidTokenException;
 import by.bsu.up.chat.common.models.Message;
 import by.bsu.up.chat.logging.Logger;
 import by.bsu.up.chat.logging.impl.Log;
+import jdk.nashorn.internal.ir.debug.JSONWriter;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import javax.json.JsonObject;
+import javax.json.stream.JsonParser;
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MessageHelper {
 
@@ -119,8 +123,8 @@ public class MessageHelper {
         message.setText(text);
         if (isPost){
             long timestamp = ((long) jsonObject.get(Constants.Message.FIELD_TIMESTAMP));
-            String author = ((String) jsonObject.get(Constants.Message.FIELD_USERNAME));
-            message.setUsername(author);
+            String author = ((String) jsonObject.get(Constants.Message.FIELD_AUTHOR));
+            message.setAuthor(author);
             message.setTimestamp(timestamp);
         }
         return message;
@@ -148,11 +152,11 @@ public class MessageHelper {
     private static JSONObject messageToJSONObject(Message message) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(Constants.Message.FIELD_ID, message.getId());
-        jsonObject.put(Constants.Message.FIELD_USERNAME, message.getUsername());
+        jsonObject.put(Constants.Message.FIELD_AUTHOR, message.getAuthor());
         jsonObject.put(Constants.Message.FIELD_TIMESTAMP, message.getTimestamp());
         jsonObject.put(Constants.Message.FIELD_TEXT, message.getText());
-        jsonObject.put(Constants.Message.FIELD_EDITED,message.getEdited());
-        jsonObject.put(Constants.Message.FIELD_DELETED,message.getDeleted());
+        jsonObject.put(Constants.Message.FIELD_IS_EDIT,message.getIsEdit());
+        jsonObject.put(Constants.Message.FIELD_IS_DELETE,message.getDeleted());
         return jsonObject;
     }
 }
