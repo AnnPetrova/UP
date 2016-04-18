@@ -262,12 +262,12 @@ function loadMessage() {
 
     ajax('GET', url, null, function(responseText){
         var response = JSON.parse(responseText);
-        Application.messageList = response.messages;
+        Application.mesList = response.messages;
         render(Application.messageList);
     });
 
-    if (Application.messageList == null) {
-        Application.messageList = [];
+    if (Application.mesList == null) {
+        Application.mesList = [];
     }
 }
 
