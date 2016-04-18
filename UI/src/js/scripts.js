@@ -1,20 +1,26 @@
 var mesId = 0;
 var myName = "User 1";
-var mesList = [];
+//var mesList = [];
+var Application = {
+    mesList : [],
+    mainUrl : 'http://localhost:8080/chat',
+    token : 'TN11EN',
+    connection : null
+};
 function run() {
     var appContainer = document.getElementsByClassName('main')[0];
 
     appContainer.addEventListener('click', delegateEvent);
     appContainer.addEventListener('keydown', delegateEvent);
 
-    mesList = loadMessage()|| [newMessage('Chat:')];
-    mesId = mesList[mesList.length - 1].id;
+    Application.mesList = loadMessage()|| [newMessage('Chat:')];
+    mesId = Application.mesList[Application.mesList.length - 1].id;
 
-    myName = mesList[mesList.length - 1].username || 'User 1';
+    myName = Application.mesList[Application.mesList.length - 1].username || 'User 1';
     var input = document.getElementById('name');
     input.value = myName;
 
-    render(mesList);
+    render(Application.mesList);
 }
 function delegateEvent(evtObj) {
     if ((evtObj.type === 'click') && evtObj.target.classList.contains('sendMessage')) {
@@ -27,13 +33,19 @@ function delegateEvent(evtObj) {
 function onSendButtonClick() {
     var userMsg = document.getElementById('userMsg');
     var text = userMsg.value;
-    mesId++;
-    mesList.push(newMessage(text));
-    render(mesList);
-    userMsg.value = "";
+    if(text!="") {
+        mesId++;
+        var mes = newMessage(text);
+        ajax('POST',Application.mainUrl,JSON.stringify(mes), function(){
 
-    var box = document.getElementById('chatBox');
-    box.scrollTop += 9999;
+             Application.mesList.push(mes);
+            render(Application.mesList);
+
+            userMsg.value = "";
+            var box = document.getElementById('chatBox');
+            box.scrollTop += 9999;
+        });
+    }
 }
 
 function onChangeNameButtonClick() {
@@ -55,7 +67,7 @@ function onChangeNameButtonClick() {
                     butDel[i].hidden = true;
                 }
             myName = input.value;
-            render(mesList);
+            render(Application.mesList);
         }
     }
 }
@@ -82,9 +94,9 @@ function add(messag) {
     input.setAttribute('id', 'editText' + messag.id);
     input.setAttribute('class', 'In');
 
-    text.innerHTML = messag.message;
+    text.innerHTML = messag.text;
     textName.innerHTML = messag.username;
-    time.textContent = messag.time;
+    time.textContent = messag.timestamp;
 
     if (!messag.deleted) {
         deleteBut.addEventListener('click', function () {
@@ -132,26 +144,38 @@ function render(list) {
     box.scrollTop += 9999;
 }
 function deleteMessage(messag) {
-    messag.deleted = true;
-    messag.message = 'Message deleted.';
-    render(mesList);
+    var mes = {
+        id: messag.id
+    };
+    ajax('DELETE', Application.mainUrl, JSON.stringify(mes), function() {
+        message.deleted = true;
+        messag.text = 'Message deleted.';
+        render(Application.mesList);
+    });
 }
 function changeMessage(messag) {
     var text = document.getElementById('myMessage' + messag.id);
     var input = document.getElementById('editText' + messag.id);
 
-    input.value = messag.message;
+    input.value = messag.text;
 
     input.hidden = false;
     text.hidden = true;
 
     input.addEventListener('keydown', function (e) {
         if (e.keyCode === 13) {
-            messag.message = input.value;
+            messag.text = input.value;
             input.hidden = true;
             text.hidden = false;
+            var mes = {
+                id: messag.id,
+                text: messag.text
+            };
+            ajax('PUT', Application.mainUrl, JSON.stringify(mes), function(){
+                loadMessage()
+            });
             messag.edited = true;
-            render(mesList);
+            render(Application.mesList);
         }
         if (e.keyCode === 27) {
             input.hidden = true;
@@ -163,21 +187,81 @@ function changeMessage(messag) {
 function newMessage(text) {
     return {
         username: myName,
-        message: text,
+        text: text,
         id: mesId,
-        time: new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"),
+        timestamp: new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"),
         deleted: false,
         edited: false
     };
 }
-function loadMessage() {
-    if (typeof(Storage) === "undefined") {
-        alert('localStorage is not accessible');
-        return;
+
+function ajax(method, url, data, continueWith) {
+    var xhr = new XMLHttpRequest();
+
+  //  continueWithError = continueWithError || defaultErrorHandler;
+    xhr.open(method || 'GET', url, true);
+
+    xhr.onload = function () {
+        if (xhr.readyState !== 4)
+            return;
+
+        if(xhr.status != 200) {
+            defaultErrorHandler('Error on the server side, response ' + xhr.status);
+            return;
+        }
+
+        if(isError(xhr.responseText)) {
+            defaultErrorHandler('Error on the server side, response ' + xhr.responseText);
+            return;
+        }
+        continueWith(xhr.responseText);
+        var error = document.getElementsByClassName('error')[0];
+        error.innerHTML = '';
+        Application.connection = true;
+    };
+
+    xhr.ontimeout = function () {
+        showError();
+    };
+
+    xhr.onerror = function (e) {
+        showError();
+    };
+
+    xhr.send(data);
+}
+function showError(){
+    var err = document.getElementsByClassName('error')[0];
+    err.innerHTML = '<img class="error" src="http://mediad.publicbroadcasting.net/p/wusf/files/styles/related/public/201206/error2.png" align="right" width="5%" height="5%" alt="Error">';
+}
+function defaultErrorHandler(message) {
+    console.error(message);
+   // output(text);
+}
+
+function isError(text) {
+    if(text == "")
+        return false;
+
+    try {
+        var obj = JSON.parse(text);
+    } catch(ex) {
+        return true;
     }
 
-    var item = localStorage.getItem("messages");
-    return item && JSON.parse(item);
+    return !!obj.error;
+}
+function loadMessage() {
+    var url = Application.mainUrl + '?token=' + Application.token;
+
+    ajax('GET', url, null, function(responseText){
+        var response = JSON.parse(responseText);
+        Application.mesList = response.messages;
+        render(Application.mesList);
+    });
+    if (Application.mesList == null) {
+        Application.mesList = [];
+    }
 }
 
 function saveMessage(listToSave) {
