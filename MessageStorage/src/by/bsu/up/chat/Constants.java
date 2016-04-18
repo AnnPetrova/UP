@@ -31,7 +31,7 @@ public interface Constants {
 
     interface Message {
         String FIELD_ID = "id";
-        String FIELD_AUTHOR = "author";
+        String FIELD_USERNAME = "author";
         String FIELD_TIMESTAMP = "timestamp";
         String FIELD_TEXT = "text";
         String FIELD_EDITED = "edited";

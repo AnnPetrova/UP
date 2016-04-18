@@ -105,7 +105,7 @@ public class InMemoryMessageStorage implements MessageStorage {
 
 
     public static JsonArray getJson() throws IOException {
-        List<String> list= Files.readAllLines(Paths.get("history.json"));
+        List<String> list= Files.readAllLines(Paths.get("MessageHistory.json"));
         String JSONData = list.toString();
         JsonReader forRead = Json.createReader(new StringReader(JSONData));
         JsonArray forArray = forRead.readArray();
