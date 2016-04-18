@@ -9,32 +9,32 @@ public class Message implements Serializable {
     private String username;
     private long timestamp;
     private String text;
-    private String edited;
-    private String deleted;
+    private boolean edited;
+    private boolean deleted;
 
     public Message() {
         this.id = "";
         this.username = "";
         this.timestamp = 0;
         this.text = "";
-        this.edited = "";
-        this.deleted = "";
+        this.edited = false;
+        this.deleted = false;
     }
 
     public Message(JsonObject temp) {
         this.username = temp.getString("username");
         this.timestamp = temp.getJsonNumber("timestamp").longValue();
         this.text = temp.getString("message");
-        this.edited = temp.getString("edited");
-        this.deleted = temp.getString("deleted");
+        this.edited = temp.getBoolean("edited");
+        this.deleted = temp.getBoolean("deleted");
         this.id = temp.getString("id");
     }
 
-    public String getEdited() {
+    public boolean getEdited() {
         return edited;
     }
 
-    public void setEdited(String edited) {
+    public void setEdited(boolean edited) {
         this.edited = edited;
     }
 
@@ -70,11 +70,11 @@ public class Message implements Serializable {
         this.text = text;
     }
 
-    public String getDeleted() {
+    public boolean getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(String deleted) {
+    public void setDeleted(boolean deleted) {
         this.deleted = deleted;
     }
 

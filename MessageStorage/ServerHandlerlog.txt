@@ -1,0 +1,32 @@
+2016-04-18 15:07:32.436: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:07:36.629: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:08:00.058: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:15:33.388: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:19:55.795: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:20:49.219: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:20:49.645: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:20:49.994: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:28:55.513: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-18 15:29:52.521: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-18 15:30:19.778: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:26.996: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:27.65: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:27.8: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:28.001: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:28.176: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:28.377: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:28.942: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:29.055: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:37:29.268: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:41.306: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:41.568: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:41.752: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:41.987: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:42.263: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:42.403: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:44.185: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:44.361: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:48.694: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 15:38:49.237: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 16:10:34.793: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 16:10:35.425: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.

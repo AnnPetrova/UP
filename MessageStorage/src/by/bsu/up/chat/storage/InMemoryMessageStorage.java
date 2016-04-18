@@ -50,7 +50,7 @@ public class InMemoryMessageStorage implements MessageStorage {
         for (int i = 0; i < messages.size(); i++) {
             if (messages.get(i).getId().equals(message.getId())) {
                 messages.get(i).setText(message.getText());
-                messages.get(i).setEdited("edited");
+                messages.get(i).setEdited(true);
                 try {
                     saveMessages(messages);
                 } catch (IOException e) {
@@ -66,7 +66,8 @@ public class InMemoryMessageStorage implements MessageStorage {
     public synchronized boolean removeMessage(String id) {
         for (int i = 0; i < messages.size(); i++) {
             if (messages.get(i).getId().equals(id)) {
-                messages.remove(i);
+                messages.get(i).setDeleted(true);
+                messages.get(i).setText("");
                 try {
                     saveMessages(messages);
                     return true;
@@ -127,10 +128,11 @@ public class InMemoryMessageStorage implements MessageStorage {
     }
 
     public static JsonObject toJson(Message history) {
-        return Json.createObjectBuilder().add("id", history.getId())
-                .add("author", history.getUsername())
+        return Json.createObjectBuilder()
+                .add("id", history.getId())
+                .add("username", history.getUsername())
                 .add("timestamp", history.getTimestamp())
-                .add("message", history.getText())
+                .add("text", history.getText())
                 .add("edited", history.getEdited())
                 .add("deleted", history.getDeleted()).build();
     }
