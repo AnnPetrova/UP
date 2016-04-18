@@ -1,4 +1,4 @@
-var mesId = 0;
+//var mesId = 0;
 var myName = "User 1";
 //var mesList = [];
 var Application = {
@@ -14,9 +14,9 @@ function run() {
     appContainer.addEventListener('keydown', delegateEvent);
 
     loadMessage();
-    mesId = Application.mesList[Application.mesList.length - 1].id;
+ //   mesId = Application.mesList[Application.mesList.length - 1].id;
 
-    myName = Application.mesList[Application.mesList.length - 1].username || 'User 1';
+    myName = loadUsername()|| 'User 1';
     var input = document.getElementById('name');
     input.value = myName;
 
@@ -34,17 +34,16 @@ function onSendButtonClick() {
     var userMsg = document.getElementById('userMsg');
     var text = userMsg.value;
     if (text != "") {
-        mesId++;
+     //   mesId++;
         var mes = newMessage(text);
         ajax('POST', Application.mainUrl, JSON.stringify(mes), function () {
 
             Application.mesList.push(mes);
-            render(Application.mesList);
-
             userMsg.value = "";
-            var box = document.getElementById('chatBox');
-            box.scrollTop += 9999;
+            render(Application.mesList);
         });
+        var box = document.getElementById('chatBox');
+        box.scrollTop += 9999;
     }
 }
 
@@ -67,6 +66,8 @@ function onChangeNameButtonClick() {
                     butDel[i].hidden = true;
                 }
             myName = input.value;
+            saveUsername(myName);
+            loadMessage();
             render(Application.mesList);
         }
     }
@@ -95,8 +96,8 @@ function add(messag) {
     input.setAttribute('class', 'In');
 
     text.innerHTML = messag.text;
-    textName.innerHTML = messag.username;
-    time.textContent = messag.timestamp;
+    textName.innerHTML = messag.author;
+    time.innerHTML = new Date(messag.timestamp).toLocaleString();
 
     if (!messag.deleted) {
         deleteBut.addEventListener('click', function () {
@@ -119,7 +120,7 @@ function add(messag) {
     document.getElementById('messages').appendChild(divName);
     document.getElementById('messages').appendChild(divItem);
 
-    if (messag.username !== myName) {
+    if (messag.author !== myName) {
         deleteBut.hidden = true;
         editBut.hidden = true;
     }
@@ -139,7 +140,7 @@ function render(list) {
         add(list[i]);
     }
 
-    saveMessage(list);
+ //   saveMessage(list);
     var box = document.getElementById('chatBox');
     box.scrollTop += 9999;
 }
@@ -172,7 +173,7 @@ function changeMessage(messag) {
                 text: messag.text
             };
             ajax('PUT', Application.mainUrl, JSON.stringify(mes), function () {
-                loadMessage()
+                loadMessage();
             });
             messag.edited = true;
             render(Application.mesList);
@@ -186,9 +187,9 @@ function changeMessage(messag) {
 }
 function newMessage(text) {
     return {
-        id: mesId,
-        username: myName,
-        timestamp: new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"),
+        id: uniqueId(),
+        author: myName,
+        timestamp: new Date().getTime(),
         text: text,
         deleted: false,
         edited: false
@@ -198,33 +199,33 @@ function newMessage(text) {
 function ajax(method, url, data, continueWith) {
     var xhr = new XMLHttpRequest();
 
-    //  continueWithError = continueWithError || defaultErrorHandler;
     xhr.open(method || 'GET', url, true);
 
     xhr.onload = function () {
         if (xhr.readyState !== 4)
             return;
 
-        if (xhr.status != 200) {
+        if(xhr.status != 200) {
             defaultErrorHandler('Error on the server side, response ' + xhr.status);
             return;
         }
 
-        if (isError(xhr.responseText)) {
+        if(isError(xhr.responseText)) {
             defaultErrorHandler('Error on the server side, response ' + xhr.responseText);
             return;
         }
+
         continueWith(xhr.responseText);
-        var error = document.getElementsByClassName('error')[0];
+        var error = document.getElementsByClassName('warning')[0];
         error.innerHTML = '';
-        Application.connection = true;
+        Application.Connected = true;
     };
 
     xhr.ontimeout = function () {
         showError();
     };
 
-    xhr.onerror = function (e) {
+    xhr.onerror = function () {
         showError();
     };
 
@@ -234,18 +235,23 @@ function showError() {
     var err = document.getElementsByClassName('error')[0];
     err.innerHTML = '<img class="error" src="http://mediad.publicbroadcasting.net/p/wusf/files/styles/related/public/201206/error2.png" align="right" width="5%" height="5%" alt="Error">';
 }
+function uniqueId() {
+    var date = Date.now();
+    var random = Math.random() * Math.random();
+
+    return Math.floor(date * random).toString();
+}
 function defaultErrorHandler(message) {
     console.error(message);
-    // output(text);
 }
 
 function isError(text) {
-    if (text == "")
+    if(text == "")
         return false;
 
     try {
         var obj = JSON.parse(text);
-    } catch (ex) {
+    } catch(ex) {
         return true;
     }
 
@@ -254,20 +260,36 @@ function isError(text) {
 function loadMessage() {
     var url = Application.mainUrl + '?token=' + Application.token;
 
-    ajax('GET', url, null, function (responseText) {
+    ajax('GET', url, null, function(responseText){
         var response = JSON.parse(responseText);
-        Application.mesList = response.messages;
-        render(Application.mesList);
+        Application.messageList = response.messages;
+        render(Application.messageList);
     });
-    if (Application.mesList == null) {
-        Application.mesList = [];
+
+    if (Application.messageList == null) {
+        Application.messageList = [];
     }
 }
 
-function saveMessage(listToSave) {
+//function saveMessage(listToSave) {
+//    if (typeof(Storage) === "undefined") {
+//        alert('localStorage is not accessible');
+//        return;
+//    }
+//    localStorage.setItem("messages", JSON.stringify(listToSave));
+//}
+function loadUsername() {
+    if(typeof(Storage) == "undefined") {
+        alert('localStorage is not accessible');
+        return;
+    }
+    var item = localStorage.getItem("author");
+    return item;
+}
+function saveUsername(name) {
     if (typeof(Storage) === "undefined") {
         alert('localStorage is not accessible');
         return;
     }
-    localStorage.setItem("messages", JSON.stringify(listToSave));
+    localStorage.setItem("author", JSON.stringify(name));
 }
