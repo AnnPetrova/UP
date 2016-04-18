@@ -30,3 +30,5 @@
 2016-04-18 15:38:49.237: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
 2016-04-18 16:10:34.793: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
 2016-04-18 16:10:35.425: [by.bsu.up.chat.server.ServerHandler] An error occurred when dispatching request.
+2016-04-18 16:15:18.196: [by.bsu.up.chat.server.ServerHandler] Could not parse message.
+2016-04-18 16:15:30.795: [by.bsu.up.chat.server.ServerHandler] Could not parse message.

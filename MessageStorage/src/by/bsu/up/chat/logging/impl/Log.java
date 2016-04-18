@@ -24,11 +24,11 @@ public class Log implements Logger {
     @Override
     public void info(String message) {
         Timestamp time = new Timestamp(new Date().getTime());
-        try (Writer writer = new OutputStreamWriter(new FileOutputStream(src, true), "UTF-8")) {
-            writer.write(time.toString() + ": " + String.format(tag, message));
+        try (Writer writer = new OutputStreamWriter(new FileOutputStream(src,true),"UTF-8")){
+            writer.write(time.toString()+": "+String.format(tag,message));
             writer.write(System.lineSeparator());
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.toString());
         }
         System.out.println(String.format(tag, message));
     }
@@ -36,11 +36,11 @@ public class Log implements Logger {
     @Override
     public void error(String message, Throwable e) {
         Timestamp time = new Timestamp(new Date().getTime());
-        try (Writer writer = new OutputStreamWriter(new FileOutputStream(src, true), "UTF-8")) {
-            writer.write(time.toString() + ": " + String.format(tag, message));
+        try (Writer writer = new OutputStreamWriter(new FileOutputStream(src,true),"UTF-8")){
+            writer.write(time.toString()+": "+String.format(tag,message));
             writer.write(System.lineSeparator());
         } catch (IOException exc) {
-            System.out.println(exc.getMessage());
+            System.out.println(exc.toString());
         }
         System.err.println(String.format(tag, message));
         e.printStackTrace(System.err);

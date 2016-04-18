@@ -5,12 +5,13 @@ import java.io.Serializable;
 
 public class Message implements Serializable {
 
+
     private String id;
     private String username;
     private long timestamp;
     private String text;
-    private boolean edited;
-    private boolean deleted;
+    private Boolean edited;
+    private Boolean deleted;
 
     public Message() {
         this.id = "";
@@ -30,14 +31,13 @@ public class Message implements Serializable {
         this.id = temp.getString("id");
     }
 
-    public boolean getEdited() {
+    public Boolean getEdited() {
         return edited;
     }
 
-    public void setEdited(boolean edited) {
+    public void setEdited(Boolean edited) {
         this.edited = edited;
     }
-
     public String getId() {
         return id;
     }
@@ -70,23 +70,13 @@ public class Message implements Serializable {
         this.text = text;
     }
 
-    public boolean getDeleted() {
-        return deleted;
+    public Boolean getDeleted() {
+       return deleted;
     }
 
-    public void setDeleted(boolean deleted) {
+    public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
     }
 
-    @Override
-    public String toString() {
-        return "Message{" +
-                "username:'" + username + '\'' +
-                ", text:'" + text + '\'' +
-                ", id:'" + id + '\'' +
-                ", timestamp:" + timestamp +
-                ", edited:'" + edited + '\'' +
-                ", deleted:'" + edited + '\'' +
-                '}';
-    }
+
 }
