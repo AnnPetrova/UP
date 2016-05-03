@@ -4,12 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <!--<servlet>-->
-    <!--<servlet-name>MyServlet</servlet-name>-->
-    <!--<servlet-class>main.webapp.MyServlet</servlet-class>-->
-  <!--</servlet>-->
-  <!--<servlet-mapping>-->
-    <!--<servlet-name>MyServlet</servlet-name>-->
-    <!--<url-pattern>/hello</url-pattern>-->
-  <!--</servlet-mapping>-->
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>main.java.servl.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
 </web-app>
