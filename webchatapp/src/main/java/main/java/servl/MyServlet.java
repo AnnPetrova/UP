@@ -1,4 +1,5 @@
-package main.webapp;
+package main.java.servl;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
