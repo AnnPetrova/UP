@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes"/>
+    <head>
+        <title>Ann Chat</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
+        <script src="js/scripts.js"></script>
+    </head>
+<body onload="run();">
+
+<div id="header">
+    <h2>Welcome to AnnChat!</h2>
+</div>
+<div class="main">
+    <div class="inputName">
+        <button id="changeButton" class="editName">Change username</button>
+        <input type="text" id="name" size="20" placeholder="Name"/>
+    </div>
+
+    <div class="wrapper">
+
+        <div id="menu">
+            <p class="welcome">Chat history:
+            <div class="error">
+                    <!--<img src="http://mediad.publicbroadcasting.net/p/wusf/files/styles/related/public/201206/error2.png"-->
+                         <!--align="right" width="5%" height="5%">-->
+            </div>
+            </p>
+        </div>
+
+        <div id="chatBox">
+            <ul class="items" id="messages">
+
+            </ul>
+
+        </div>
+
+        <div id="message">
+            <textarea type="text" id="userMsg" placeholder="Enter your message:"></textarea>
+            <button id="sendButton" class="sendMessage" type="button">Send</button>
+        </div>
+    </div>
+    <div id="footer">
+        <br/><br/>
+        Ann Petrova Copyright &copy;
+    </div>
+</div>
+</body>
+</html>

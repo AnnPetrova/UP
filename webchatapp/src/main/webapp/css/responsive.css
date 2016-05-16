@@ -1,0 +1,47 @@
+@media screen and (max-width: 810px){
+
+form, p, span {
+margin:0;
+padding:0; }
+
+ .wrapper{
+  width: 95%;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+ }
+ #chatbox{
+  width: 90%;
+  height: 75%;
+ }
+ .myMessage{
+ margin-left: 0%;
+ text-align: left;
+ }
+}
+@media screen and (min-height: 540px){
+
+form, p, span {
+margin:0;
+padding:0;
+}
+
+ .wrapper{
+  height: 100%;
+ }
+ #chatbox{
+  height: 95%;
+ }
+ .myMessage{
+ text-align: left;
+ }
+}
+@media screen and (min-height:600px){
+
+ .wrapper{
+  height: 100%;
+ }
+ #chatbox{
+  height: 95%;
+ }
+}

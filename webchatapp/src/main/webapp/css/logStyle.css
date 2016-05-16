@@ -1,0 +1,17 @@
+body {
+    font:12px arial;
+    color: #222;
+    text-align:center;
+}
+input{
+    width:30%;
+    height:10%;
+    border:1px solid #990033;
+    vertical-align: 5px;
+}
+button.logBut{
+    vertical-align: 5px;
+    border: solid #b40071;
+    border-radius: 5px;
+    background-color: rgba(0, 125, 255, 0.16);
+}
