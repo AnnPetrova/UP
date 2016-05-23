@@ -1,0 +1,1 @@
+select * from Messages where (user_id=1 && date > '09-05-2016' && date < '10-05-2016');

@@ -1,0 +1,1 @@
+select name from Users as U where ((select count(user_id) where user_id=U.id) > 3);
