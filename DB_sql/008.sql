@@ -1,1 +1,1 @@
-select U.name, M.date, M.text from Messages as M left join Users as U on M.user_id = U.id order by date;
+select U.name, M.date, M.text from chat.Messages as M left join chat.Users as U on M.user_id = U.id order by date;

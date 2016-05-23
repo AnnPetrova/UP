@@ -1,1 +1,1 @@
-select * from Messages where (user_id=1 && date > '09-05-2016' && date < '10-05-2016');
+select * from chat.Messages where (user_id=1 && date > '2016-05-09' && date < '2016-05-10');

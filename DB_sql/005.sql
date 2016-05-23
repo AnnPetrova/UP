@@ -1,1 +1,1 @@
-select name from Users as U where ((select count(user_id) where user_id=U.id) > 3);
+select name from chat.Users as U where ((select count(user_id) where user_id=U.id) > 3);

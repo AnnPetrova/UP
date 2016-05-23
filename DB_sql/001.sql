@@ -1,2 +1,1 @@
-USE chat;
-select * from Messages order by date;
+select * from chat.Messages order by date;

@@ -1,1 +1,1 @@
-select distinct name from Users;
+select distinct name from chat.Users;
